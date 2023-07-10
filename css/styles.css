@@ -1,0 +1,72 @@
+/* CSS Reset */
+body, header, main, footer, nav, ul, img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Box sizing applies to all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Background color for webpage */
+body {
+  background-color: #f2f2f2;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Style rules for mobile viewport */
+header .name{
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 3em;
+  text-align: center;
+  margin: 15px 0 0 0;
+}
+
+header .line-above {
+  display: inline-block;
+  font-family: 'PT Sans Narrow', sans-serif;
+  border-top: 1px solid black;
+  margin: 0 0 40px 46%;
+}
+
+.directory {
+  position: relative;
+  max-width: 450px;
+  margin: 10px 5px;
+}
+
+.directory img {
+  border-radius: 10px;
+}
+
+.image-text {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  color: #f2f2f2;
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  border-radius: 10px;
+}
+
+footer .copyright {
+  font-size: .75em;
+  text-align: center;
+  margin: 4em 0 2em 0;
+  color: #666600
+}
+
+footer p a {
+  text-decoration: none;
+  color: #666600;
+}
