@@ -1,5 +1,5 @@
 /* CSS Reset */
-body, header, main, footer, nav, ul, img {
+body, header, main, footer, nav, ul, img, figure, figcaption {
   margin: 0;
   padding: 0;
   border: 0;
@@ -8,6 +8,11 @@ body, header, main, footer, nav, ul, img {
 /* Box sizing applies to all elements */
 * {
   box-sizing: border-box;
+}
+
+/* Hides navbar for mobile viewport */
+.desktop-nav {
+  display: none;
 }
 
 /* Background color for webpage */
@@ -34,10 +39,21 @@ header .name{
   margin: 15px 0 0 0;
 }
 
+header .name a {
+  text-decoration: none;
+  color:#000
+}
+
+header .name a:hover {
+  color: #d6a934;
+  opacity: 0.7;
+}
+
 header .line-above {
   display: inline-block;
   font-family: 'PT Sans Narrow', sans-serif;
   border-top: 1px solid black;
+  border-color: rgb(0, 0, 0, 0.4);
   margin: 0 0 40px 80px;
 }
 
@@ -83,7 +99,58 @@ footer p a {
 }
 
 /* Media query for Desktop viewport */
-@media screen and (min-width: 1015px) {
+@media screen and (min-width: 1090px) {
+
+  /* Enable navbar for desktop viewport */
+  .desktop-nav {
+    display: block;
+  }
+
+  /* Desktop style rules for header and navbar */
+  .desktop {
+    display: flex;
+    flex-wrap: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .desktop header {
+    margin-left: 10%;
+  }
+
+  .desktop-nav {
+    margin-right: 10%;
+  }
+
+  .desktop-nav ul {
+    margin-top: 50px;
+  }
+
+  .desktop-nav li {
+    display: inline;
+    padding: 1em;
+  }
+
+  .desktop-nav li:last-child {
+    border-right: none;
+  }
+
+  .desktop-nav li a {
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: #000;
+    font-size: 1.5em;
+    text-decoration: none;
+  }
+
+  .desktop-nav li a:hover {
+    border-bottom: #000 solid 1px;
+    border-color: rgb(0, 0, 0, 0.2);
+  }
+
+  .desktop-nav li a:hover {
+    color: #d6a934;
+    opacity: 0.7;
+  }
 
   /* Desktop style rules for main content */
   .grid {
@@ -96,5 +163,10 @@ footer p a {
 
   .img1, .img2, .img3, .img4 {
     width: 40%;
+  }
+
+  figure:hover {
+    box-shadow: 5px 5px 15px #000;
+    border-radius: 10px;
   }
 }
