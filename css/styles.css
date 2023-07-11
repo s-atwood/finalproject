@@ -56,10 +56,6 @@ header .line-above {
   margin: 0 0 40px 80px;
 }
 
-.mobile-nav #menu-links {
-  display: none;
-}
-
 .mobile-nav a {
   font-family: 'PT Sans Narrow', sans-serif;
   text-align: center;
@@ -73,6 +69,10 @@ header .line-above {
   display: block;
   position: relative;
 
+}
+
+.mobile-nav #menu-links {
+  display: none;
 }
 
 .directory {
