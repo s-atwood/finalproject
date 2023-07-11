@@ -50,11 +50,29 @@ header .name a:hover {
 }
 
 header .line-above {
-  display: inline-block;
   font-family: 'PT Sans Narrow', sans-serif;
   border-top: 1px solid black;
   border-color: rgb(0, 0, 0, 0.4);
   margin: 0 0 40px 80px;
+}
+
+.mobile-nav #menu-links {
+  display: none;
+}
+
+.mobile-nav a {
+  font-family: 'PT Sans Narrow', sans-serif;
+  text-align: center;
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #000;
+  display: block;
+}
+
+.mobile-nav a.menu-icon {
+  display: block;
+  position: relative;
+
 }
 
 .directory {
@@ -106,15 +124,19 @@ footer p a {
     display: block;
   }
 
+  .mobile-nav {
+    display: none;
+  }
+
   /* Desktop style rules for header and navbar */
-  .desktop {
+  .flex-header {
     display: flex;
     flex-wrap: row;
     align-items: center;
     justify-content: space-between;
   }
 
-  .desktop header {
+  .flex-header header {
     margin-left: 10%;
   }
 
