@@ -1,3 +1,8 @@
+<!--
+  Name: Shawn Atwood
+  Date: 7/10/2023
+  Filename: contact.html
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,6 +52,35 @@
     </div>
 
     <main id="content">
+
+      <div class="form">
+
+        <img src="images/contact.jpeg" alt="" class="form-img">
+
+        <h1 class="contact-header">Contact</h1>
+      
+        <form class="flex-form">
+
+          <fieldset>
+            <label for="fName">First Name:</label>
+            <input type="text" name="fName" id="fName" required>
+    
+            <label for="lName">Last Name:</label>
+            <input type="text" name="lName" id="lName" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+    
+            <label for="message">Message:</label>
+            <textarea id="message" name="questions" rows="5" cols="35"></textarea>
+    
+            <input type="submit" id="submit" value="Submit" class="btn">
+          </fieldset>
+
+        </form>
+
+      </div>
+
     </main>
 
     <footer>

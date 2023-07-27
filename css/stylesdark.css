@@ -1,0 +1,208 @@
+/*
+  Name: Shawn Atwood
+  Date: 7/10/2023
+  Filename: stylesdark.css
+*/
+
+/* CSS Reset */
+body, header, main, footer, nav, ul, img, figure, figcaption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Box sizing applies to all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Hides navbar for mobile viewport */
+.desktop-nav {
+  display: none;
+}
+
+/* Background color for dark mode webpage */
+body {
+  background-color: #333333;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Style rules for mobile viewport */
+
+/* Style rules for mobile header */
+.flex-header {
+  display: flex;
+  flex-wrap: row;
+  align-items:top;
+  justify-content: space-between;
+}
+
+.header-mobile {
+  margin: 0 0 0 2%;
+}
+
+.header-mobile .name{
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 3em;
+  text-align: center;
+  margin: 15px 0 0 0;
+}
+
+.header-mobile .name a {
+  text-decoration: none;
+  color:#f2f2f2; /* white color text */
+}
+
+.header-mobile .line-above {
+  font-family: 'PT Sans Narrow', sans-serif;
+  border-top: 1px solid black;
+  border-color: rgba(255, 255, 255, 0.4); /* almost transparent white color for border */
+  margin: 0 0 40px 80px;
+}
+
+/* Hamburger menu */
+.mobile-nav {
+  width: 40%;
+  margin-top: 4%;
+}
+
+.mobile-nav #menu-links {
+  display: none;
+}
+
+.mobile-nav a {
+  font-family: 'PT Sans Narrow', sans-serif;
+  text-align: center;
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #f8f8f8; /* almost white color text */
+  display: block;
+  padding: 0.5%;
+}
+
+.mobile-nav a.menu-icon div {
+  font-size: 2em;
+}
+
+/* Style rules for home page image links */
+.directory {
+  position: relative;
+  max-width: auto;
+  margin: 10px 5px;
+}
+
+.directory img {
+  border-radius: 10px;
+}
+
+.image-text {
+  position: absolute;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.1); /* almost transparent white color for background-color */
+  color: #f8f8f8; /* almost white color text */
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  border-radius: 10px;
+}
+
+/* Style rules for social and footer */
+footer .social{
+  width: 50px;
+  margin: 4em auto 0;
+}
+
+footer .copyright {
+  font-size: .75em;
+  text-align: center;
+  color: #d0d0d0; /* very light gray color text */
+  margin-bottom: 4%;
+}
+
+footer p a {
+  text-decoration: none;
+  color: #d0d0d0; /* very light gray color text */
+}
+
+/* Media query for Desktop viewport */
+@media screen and (min-width: 1090px) {
+
+  /* Enable navbar for desktop viewport */
+  .desktop-nav {
+    display: block;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  /* Desktop style rules for header and navbar */
+  .flex-header {
+    display: flex;
+    flex-wrap: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header-desktop {
+    margin: 0 0 0 10%;
+  }
+
+  .desktop-nav {
+    margin-right: 10%;
+  }
+
+  .desktop-nav ul {
+    margin-top: 50px;
+  }
+
+  .desktop-nav li {
+    display: inline;
+    padding: 1em;
+  }
+
+  .desktop-nav li:last-child {
+    border-right: none;
+  }
+
+  .desktop-nav li a {
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: #f8f8f8; /* almost white color text */
+    font-size: 1.5em;
+    text-decoration: none;
+  }
+
+  .desktop-nav li a:hover {
+    border-bottom: #ffffff solid 1px; /* white color border */
+    border-color: rgba(255, 255, 255, 0.2); /* almost transparent white color for border */
+  }
+
+  .desktop-nav li a:hover {
+    color: #ffaa22; /* light orange color text */
+    opacity: 0.7;
+  }
+
+  /* Desktop style rules for main content */
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .img1, .img2, .img3, .img4 {
+    width: 40%;
+  }
+
+  figure:hover {
+    box-shadow: 5px 5px 15px #fff;
+    border-radius: 10px;
+  }
+}
