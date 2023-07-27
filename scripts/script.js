@@ -17,15 +17,16 @@ function hamburger() {
 // JavaScript to handle the custom play button
 var audio = document.getElementById('audio');
 var playButton = document.getElementById('play-button');
+playButton.classList.add('play');
 
 playButton.addEventListener('click', function() {
     if (audio.paused) {
         // Start audio playback if it's paused
         audio.play();
-        playButton.textContent = 'Pause Audio';
+        playButton.textContent = '\u25FC';
     } else {
         // Pause audio if it's playing
         audio.pause();
-        playButton.textContent = 'For an enhanced experience, enjoy audio from the game!';
+        playButton.textContent = '\u25B6';
     }
 });

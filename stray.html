@@ -53,14 +53,22 @@
 
     <main id="content">
 
-      <h1>Stray</h1>
-      <p>The environmental design of Stray is outstanding. The delapitated and cramped buildings, inspired by the real life city of Kowloon, beg you to explore. The largely abandonded city still feels so alive with the thoughtful design details that unveil the cities past. Though Stray lacks a photo mode, I found a way to capture its beauty.</p>
-
-      <div class="soundbit">
-        <p>Sounds from the game</p>
+      <div class="top-content">
+        <h1 class="game-name">Stray</h1>
+        <p class="game-desc">The environmental design of Stray is outstanding. The delapitated and cramped buildings, inspired by the real life city of Kowloon, beg you to explore. The largely abandonded city still feels so alive with the thoughtful design details that unveil the cities past. Though Stray lacks a photo mode, I found a way to capture its beauty.</p>
       </div>
 
-      <img src="images/stray1.jpeg" alt="Cat watches robot in alley">
+      <div class="soundbit">
+        <div>
+          <p class="play-desc">Click play for an enhanced experience and enjoy audio from the game!<span id="play-button">&#9654;</span></p>
+        </div>
+        <audio id="audio" loop>
+          <source src="#" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+
+      <!-- <img src="images/stray1.jpeg" alt="Cat watches robot in alley">
       <p>This photo has many layers to it. The longer you view it, the more details reveal themselves to you bringing more life to the photo.</p>
       <img src="images/stray2.jpeg" alt="Robot standing in street beneath city lights">
       <p>My favorite shot from Stray. I had my character perched high above the street to get this shot. Reducing the contrast in this image gave it a more drawn feel and is intended to be reminiscent anime. </p>
@@ -69,7 +77,36 @@
       <img src="images/stray4.jpeg" alt="Robot strolling through street benath warm lanterns">
       <p>Inspired by street photography, I loved the motion in this photo.</p>
       <img src="images/stray5.jpeg" alt="Birds eye view of robot walking street">
-      <p>A little clever maneuvering and I was able to capture this birds eye view of a robot on a stroll. Added noise and desaturation gives the photo a more realistic feel. </p>
+      <p>A little clever maneuvering and I was able to capture this birds eye view of a robot on a stroll. Added noise and desaturation gives the photo a more realistic feel. </p> -->
+
+      <div class="game-grid">
+
+        <div class="pic-desc-group">
+          <img src="images/stray4.jpeg" alt="Robot strolling through street benath warm lanterns">
+          <p>Inspired by street photography, I loved the motion in this photo.</p>
+        </div>
+
+        <div class="pic-desc-group">
+          <img src="images/stray5.jpeg" alt="Birds eye view of robot walking street">
+          <p>A little clever maneuvering and I was able to capture this birds eye view of a robot on a stroll. Added noise and desaturation gives the photo a more realistic feel.</p>
+        </div>
+
+        <div class="pic-desc-group">
+          <img src="images/stray1.jpeg" alt="Cat watches robot in alley">
+          <p>This photo has many layers to it. The longer you view it, the more details reveal themselves to you bringing more life to the photo.</p>
+        </div>
+
+        <div class="pic-desc-group vertical">
+          <img src="images/stray2.jpeg" alt="Robot standing in street beneath city lights">
+          <p>My favorite shot from Stray. I had my character perched high above the street to get this shot. Reducing the contrast in this image gave it a more drawn feel and is intended to be reminiscent anime.</p>
+        </div>
+
+        <div class="pic-desc-group vertical">
+          <img src="images/stray3.jpeg" alt="Father and son robot in gritty alley">
+          <p>Not unique to this photo, I was inspired by Hong Kong street photography. I added a layer of noise to the photo for a little grit.</p>
+        </div>
+
+      </div>
 
     </main>
 
