@@ -7,7 +7,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="css/styles.css">
+  <link id="pagestyle" rel="stylesheet" href="css/styles.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -53,13 +53,64 @@
 
     <main id="content">
 
+      <div class="top-content">
+        <h1 class="game-name">Death Stranding</h1>
+        <p class="game-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+      </div>
+
+      <div class="soundbit">
+        <div>
+          <p class="play-desc" id="play-button">Click to play for an enhanced experience and enjoy audio from the game!</p>
+        </div>
+        <audio id="audio" loop>
+          <source src="media/ds.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+
+      <div class="game-grid">
+
+        <div class="pic-desc-group">
+          <img src="images/ds1.jpeg" alt="">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        </div>
+
+        <div class="pic-desc-group">
+          <img src="images/ds2.jpeg" alt="">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        </div>
+
+        <div class="pic-desc-group">
+          <img src="images/ds3.jpeg" alt="">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        </div>
+
+        <div class="pic-desc-group vertical">
+          <img src="images/ds4.jpeg" alt="">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        </div>
+
+        <div class="pic-desc-group vertical">
+          <img src="images/ds5.jpeg" alt="">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        </div>
+
+      </div>
 
     </main>
 
     <footer>
 
-      <div class="social">
-        <a href="https://twitter.com/saraatwoodgamin" target="_blank"><img src="images/twitter-logo-twitter-icon-transparent-free-free-png.png" alt="black and white Twitter logo"></a>
+      <div class="icons">
+
+        <div class="social">
+          <a href="https://twitter.com/saraatwoodgamin" target="_blank"><img id="switchtwittericon" src="images/twitter-logo-twitter-icon-transparent-free-free-png.png" alt="black and white Twitter logo"></a>
+        </div>
+
+        <div class="darktheme">
+          <a><img id="switchdarkicon" onclick="swapStyleSheet()" src="images/darkthemeicon.png"></a>
+        </div>
+
       </div>
 
       <div class="copyright">
