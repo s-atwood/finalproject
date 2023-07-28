@@ -25,38 +25,40 @@ if (audio && playButton) {
       if (audio.paused) {
           // Start audio playback if it's paused
           audio.play();
-          playButton.textContent = 'Click play for an enhanced experience and enjoy audio from the game!';
+          playButton.textContent = 'Click to play for an enhanced experience and enjoy audio from the game!';
       } else {
           // Pause audio if it's playing
           audio.pause();
-          playButton.textContent = 'Click play for an enhanced experience and enjoy audio from the game!';
+          playButton.textContent = 'Click to play for an enhanced experience and enjoy audio from the game!';
       }
   });
 }
 
+// Function swaps style sheet when image icon is clicked and switches light/dark mode icons
+// Selections saved to local storage for persistance across webpages
 function swapStyleSheet() {
   let currentStyle = document.getElementById('pagestyle').getAttribute('href');
-  let imageElement1 = document.getElementById('switchdarkicon'); // replace 'your-image-id' with the actual id of your image
+  let imageElement1 = document.getElementById('switchdarkicon');
   let imageElement2 = document.getElementById('switchtwittericon');
 
   if (currentStyle === 'css/styles.css') {
     document.getElementById('pagestyle').setAttribute('href', 'css/stylesdark.css');
     localStorage.setItem('preferredStyleSheet', 'css/stylesdark.css');
-    imageElement1.src = 'images/lightthemeicon.png'; // replace with the actual path to your dark mode image
+    imageElement1.src = 'images/lightthemeicon.png';
     imageElement2.src = 'images/twitter-drk.png';
     localStorage.setItem('image1Src', 'images/lightthemeicon.png');
     localStorage.setItem('image2Src', 'images/twitter-drk.png');
   } else {
     document.getElementById('pagestyle').setAttribute('href', 'css/styles.css');
     localStorage.setItem('preferredStyleSheet', 'css/styles.css');
-    imageElement1.src = 'images/darkthemeicon.png'; // replace with the actual path to your light mode image
+    imageElement1.src = 'images/darkthemeicon.png';
     imageElement2.src = 'images/twitter-logo-twitter-icon-transparent-free-free-png.png';
     localStorage.setItem('image1Src', 'images/darkthemeicon.png');
     localStorage.setItem('image2Src', 'images/twitter-logo-twitter-icon-transparent-free-free-png.png');
   }
 }
 
-
+// Function checks local storage when browser loaded to retain previously selected stylesheet/icon
 window.onload = function() {
   let preferredStyleSheet = localStorage.getItem('preferredStyleSheet');
   let image1Src = localStorage.getItem('image1Src');

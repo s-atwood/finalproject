@@ -72,14 +72,15 @@ img {
 
 .header-mobile .name a {
   text-decoration: none;
-  color:#000
+  color:#f2f2f2;
 }
 
 .header-mobile .line-above {
   font-family: 'PT Sans Narrow', sans-serif;
   border-top: 1px solid black;
-  border-color: rgb(0, 0, 0, 0.4);
+  border-color: rgb(242, 242, 242, 0.4);
   margin: 0 0 40px 80px;
+  color: #f2f2f2;
 }
 
 /* Hamburger menu */
@@ -97,13 +98,14 @@ img {
   text-align: center;
   font-size: 1.2em;
   text-decoration: none;
-  color: #000;
+  color: #f2f2f2;
   display: block;
   padding: 0.5%;
 }
 
 .mobile-nav a.menu-icon div {
   font-size: 2em;
+  color: #f2f2f2;
 }
 
 /* Style rules for home page image links */
@@ -233,6 +235,11 @@ textarea {
 .game-grid p {
   font-family: 'PT Sans Narrow', sans-serif;
 }
+
+.image-link {
+  color: #f2f2f2;
+}
+
 /* Style rules for social and footer */
 .icons {
   display: flex;
@@ -257,10 +264,14 @@ textarea {
   width: 35px;
 }
 
+.darktheme:hover {
+  cursor: pointer;
+}
+
 .copyright {
   font-size: .75em;
   text-align: center;
-  color: #666600;
+  color: #f2f2f2;
   margin-top: 1.5%;
   margin-bottom: 2%;
 }
@@ -308,7 +319,7 @@ textarea {
 
   .desktop-nav li a {
     font-family: 'PT Sans Narrow', sans-serif;
-    color: #000;
+    color: #f2f2f2;
     font-size: 1.5em;
     text-decoration: none;
   }
