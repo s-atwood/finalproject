@@ -57,7 +57,7 @@ img {
   flex-wrap: row;
   align-items:top;
   justify-content: space-between;
-  border-bottom: 1.5px solid #f2f2f2;
+  border-bottom: 1.5px solid #dcdcdc;
   margin-bottom: 60px;
 }
 
@@ -74,7 +74,7 @@ img {
 
 .header-mobile .name a {
   text-decoration: none;
-  color:#f2f2f2;
+  color:#dcdcdc;
 }
 
 .header-mobile .line-above {
@@ -82,7 +82,7 @@ img {
   border-top: 1px solid black;
   border-color: rgb(242, 242, 242, 0.4);
   margin: 0 0 40px 80px;
-  color: #f2f2f2;
+  color: #dcdcdc;
 }
 
 /* Hamburger menu */
@@ -100,14 +100,14 @@ img {
   text-align: center;
   font-size: 1.2em;
   text-decoration: none;
-  color: #f2f2f2;
+  color: #dcdcdc;
   display: block;
   padding: 0.5%;
 }
 
 .mobile-nav a.menu-icon div {
   font-size: 2em;
-  color: #f2f2f2;
+  color: #dcdcdc;
 }
 
 /* Style rules for home page image links */
@@ -152,7 +152,7 @@ img {
   font-family: 'PT Sans Narrow', sans-serif;
   text-align: center;
   margin-bottom: 3%;
-  color: #f2f2f2;
+  color: #dcdcdc;
   margin-left: 4%;
   margin-right: 4%;
 }
@@ -167,7 +167,7 @@ img {
   font-family: 'PT Sans Narrow', sans-serif;
   text-align: center;
   margin: 0 auto;
-  color: #f2f2f2;
+  color: #dcdcdc;
 }
 
 .flex-form {
@@ -183,14 +183,14 @@ label {
   font-family: 'PT Sans Narrow', sans-serif;
   text-align: center;
   padding: 1%;
-  color: #f2f2f2;
+  color: #dcdcdc;
 }
 
 input {
   display: block;
   margin: 0 auto;
   border-color: rgb(0, 0, 0, 0.3);
-  background-color: #f2f2f2;
+  background-color: #dcdcdc;
   border-radius: 5px;
 }
 
@@ -198,7 +198,7 @@ textarea {
   display: block;
   margin: 0 auto;
   border-color: rgb(0, 0, 0, 0.3);
-  background-color: #f2f2f2;
+  background-color: #dcdcdc;
   border-radius: 5px;
 }
 
@@ -215,7 +215,7 @@ textarea {
   width: 80%;
   font-family: 'PT Sans Narrow', sans-serif;
   font-size: 3em;
-  color: #f2f2f2;
+  color: #dcdcdc;
 }
 
 .triangle {
@@ -228,7 +228,7 @@ textarea {
   width: 80%;
   font-size: 1.5em;
   font-family: 'PT Sans Narrow', sans-serif;
-  color: #f2f2f2;
+  color: #dcdcdc;
 }
 
 .kowloon-link {
@@ -245,7 +245,7 @@ textarea {
   font-family: 'PT Sans Narrow', sans-serif;
   font-size: 1.3em;
   transition: font-size 0.3s ease;
-  color: #f2f2f2;
+  color: #dcdcdc;
 }
 
 .game-grid {
@@ -269,7 +269,7 @@ textarea {
   padding: 5%;
   border-radius: 10px;
   background-color: #474242;
-  color: #f2f2f2;
+  color: #dcdcdc;
   font-size: 1.3em;
   margin-top: 2%;
   margin-bottom: 10%;
@@ -284,13 +284,13 @@ textarea {
 }
 
 .image-link {
-  color: #f2f2f2;
+  color: #dcdcdc;
 }
 
 .addendum {
   font-family: 'PT Sans Narrow', sans-serif;
   text-align: center;
-  color: #f2f2f2;
+  color: #dcdcdc;
 }
 
 .add-one {
@@ -306,11 +306,10 @@ textarea {
 }
 
 table {
-  /* border: 1px solid #000; */
   border-collapse: collapse;
   border-radius: 10px;
   border-style: hidden;
-  box-shadow: 0 0 0 3px #f2f2f2;
+  box-shadow: 0 0 0 3px #dcdcdc;
 }
 
 caption {
@@ -318,13 +317,17 @@ caption {
   font-size: 1.8em;
   margin-top: 3%;
   margin-bottom: 1%;
-  color: #f2f2f2;
+  color: #dcdcdc;
+}
+
+tr:nth-child(even) {
+  background-color: #1a1a1a;
 }
 
 th, td {
-  border: 2px solid #f2f2f2;
+  border: 2px solid #dcdcdc;
   font-family: 'PT Sans Narrow', sans-serif;
-  color: #f2f2f2;
+  color: #dcdcdc;
 }
 
 th {
@@ -356,11 +359,11 @@ td {
   font-family: 'PT Sans Narrow', sans-serif;
   font-size: 1.8em;
   margin-top: 10%;
-  color: #f2f2f2;
+  color: #dcdcdc;
 }
 
 .border {
-  border: 3px solid #f2f2f2;
+  border: 3px solid #dcdcdc;
   padding: 5%;
   border-radius: 10px;
 }
@@ -370,7 +373,7 @@ td {
   line-height: 200%;
   font-family: 'PT Sans Narrow', sans-serif;
   font-size: 22px;
-  color: #f2f2f2;
+  color: #dcdcdc;
 }
 
 .inner-list > li {
@@ -378,7 +381,7 @@ td {
   margin-left: 3%;
   font-size: 18px;
   list-style-type: disc;
-  color: #f2f2f2;
+  color: #dcdcdc;
 }
 
 /* Style rules for About Me page */
@@ -387,7 +390,7 @@ td {
   font-family: 'PT Sans Narrow', sans-serif;
   margin-bottom: 3%;
   font-size: 2.4em;
-  color: #f2f2f2;
+  color: #dcdcdc;
 }
 
 .about-container {
@@ -399,32 +402,32 @@ td {
 .first-para h3 {
   margin-bottom: 1.5%;
   text-align: center;
-  color: #f2f2f2;
+  color: #dcdcdc;
 }
 
 .first-para {
   font-family: 'PT Sans Narrow', sans-serif;
-  border: 3px solid #f2f2f2;
+  border: 3px solid #dcdcdc;
   border-radius: 10px;
   padding: 2%;
   font-size: 1.2em;
   margin-bottom: 6%;
-  color: #f2f2f2;
+  color: #dcdcdc;
 }
 
 .second-para h3 {
   margin-bottom: 1.5%;
   text-align: center;
-  color: #f2f2f2;
+  color: #dcdcdc;
 }
 
 .second-para {
   font-family: 'PT Sans Narrow', sans-serif;
-  border: 3px solid #f2f2f2;
+  border: 3px solid #dcdcdc;
   border-radius: 10px;
   padding: 2%;
   font-size: 1.2em;
-  color: #f2f2f2;
+  color: #dcdcdc;
 }
 
 /* Style rules for social and footer */
@@ -505,7 +508,7 @@ td {
 
   .desktop-nav li a {
     font-family: 'PT Sans Narrow', sans-serif;
-    color: #f2f2f2;
+    color: #dcdcdc;
     font-size: 1.5em;
     text-decoration: none;
   }
@@ -586,7 +589,7 @@ td {
   }
 
   .desktop-contact-img .form-img {
-    box-shadow: 5px 5px 15px #605e5e;
+    box-shadow: 5px 5px 15px #000;
   }
 
   .desktop-contact-content .contact-desc {

@@ -141,6 +141,10 @@ img {
   border-radius: 10px;
 }
 
+#myImage {
+  transition: opacity 2s ease;
+}
+
 /* Style rules for contact form */
 .desktop-form {
   display: none;
@@ -305,6 +309,10 @@ caption {
   font-size: 1.8em;
   margin-top: 3%;
   margin-bottom: 1%;
+}
+
+tr:nth-child(even) {
+  background-color: #dcdcdc;
 }
 
 th, td {
