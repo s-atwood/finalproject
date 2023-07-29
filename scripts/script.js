@@ -39,16 +39,16 @@ function swapStyleSheet() {
   let imageElement1 = document.getElementById('switchdarkicon');
   let imageElement2 = document.getElementById('switchtwittericon');
 
-  if (currentStyle === 'css/styles.css') {
-    document.getElementById('pagestyle').setAttribute('href', 'css/stylesdark.css');
-    localStorage.setItem('preferredStyleSheet', 'css/stylesdark.css');
+  if (currentStyle === 'css/styles.min.css') {
+    document.getElementById('pagestyle').setAttribute('href', 'css/stylesdark.min.css');
+    localStorage.setItem('preferredStyleSheet', 'css/stylesdark.min.css');
     imageElement1.src = 'images/lightthemeicon.png';
     imageElement2.src = 'images/twitter-drk.png';
     localStorage.setItem('image1Src', 'images/lightthemeicon.png');
     localStorage.setItem('image2Src', 'images/twitter-drk.png');
   } else {
-    document.getElementById('pagestyle').setAttribute('href', 'css/styles.css');
-    localStorage.setItem('preferredStyleSheet', 'css/styles.css');
+    document.getElementById('pagestyle').setAttribute('href', 'css/styles.min.css');
+    localStorage.setItem('preferredStyleSheet', 'css/styles.min.css');
     imageElement1.src = 'images/darkthemeicon.png';
     imageElement2.src = 'images/twitter-logo-twitter-icon-transparent-free-free-png.png';
     localStorage.setItem('image1Src', 'images/darkthemeicon.png');
@@ -67,7 +67,7 @@ window.onload = function() {
   if (preferredStyleSheet) {
     document.getElementById('pagestyle').setAttribute('href', preferredStyleSheet);
   } else {
-    document.getElementById('pagestyle').setAttribute('href', 'css/styles.css');
+    document.getElementById('pagestyle').setAttribute('href', 'css/styles.min.css');
   }
 
   if (image1Src) {
@@ -88,6 +88,7 @@ function cycleImages() {
   var images = ["images/homestray.jpeg", "images/homeds.jpeg", "images/homehorizon.jpeg", "images/homegot.jpeg"];
   var currentIndex = 0;
   var image = document.getElementById("myImage");
+  var fadeInTime = 1000;
   var fadeOutTime = 1000;
 
   setInterval(function() {
@@ -98,9 +99,9 @@ function cycleImages() {
       image.src = images[currentIndex];
       currentIndex = (currentIndex + 1) % images.length;
       image.style.opacity = 1;
-    }, fadeOutTime);
+    }, 1200);
 
-  }, 4000);
+  }, 4500);
 }
 
 document.addEventListener("DOMContentLoaded", function() {
