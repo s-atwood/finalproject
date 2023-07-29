@@ -4,8 +4,6 @@
   Filename: scripts.js
 */
 
-
-
 // Hamburger menu function
 function hamburger() {
   var menu = document.getElementById("menu-links");
@@ -25,11 +23,9 @@ if (audio && playButton) {
 
   playButton.addEventListener('click', function() {
       if (audio.paused) {
-          // Start audio playback if it's paused
           audio.play();
           playButton.textContent = 'Click to play for an enhanced experience and enjoy audio from the game!';
       } else {
-          // Pause audio if it's playing
           audio.pause();
           playButton.textContent = 'Click to play for an enhanced experience and enjoy audio from the game!';
       }
@@ -87,37 +83,26 @@ window.onload = function() {
   }
 }
 
-// Function that cycles through images on homepage
-// function cycleImages() {
-//   var images = ["images/homegot.jpeg", "images/homeds.jpeg"];
-//   var currentIndex = 0;
-//   var image = document.getElementById("myImage");
-
-//   setInterval(function() {
-//     image.src = images[currentIndex];
-//     currentIndex = (currentIndex + 1) % images.length;
-//   }, 3000);
-// }
-
+// Function cycles through images on home page
 function cycleImages() {
   var images = ["images/homestray.jpeg", "images/homeds.jpeg", "images/homehorizon.jpeg", "images/homegot.jpeg"];
   var currentIndex = 0;
   var image = document.getElementById("myImage");
-  var fadeInTime = 1000; // Time in milliseconds for fade-in effect
-  var fadeOutTime = 1000; // Time in milliseconds for fade-out effect
+  var fadeOutTime = 1000;
 
   setInterval(function() {
-    image.style.opacity = 0; // Fade-out effect
+    image.style.opacity = 0;
 
-    // After fade-out, update the image source and reset opacity to 1 (fade-in)
+    // Updates image source and resets opacity after fadeout
     setTimeout(function() {
       image.src = images[currentIndex];
       currentIndex = (currentIndex + 1) % images.length;
       image.style.opacity = 1;
     }, fadeOutTime);
 
-  }, 4000); // Set the interval to 5000 milliseconds (5 seconds)
+  }, 4000);
 }
+
 document.addEventListener("DOMContentLoaded", function() {
   cycleImages();
 });

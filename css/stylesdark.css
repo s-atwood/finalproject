@@ -143,6 +143,10 @@ img {
   border-radius: 10px;
 }
 
+#myImage {
+  transition: opacity 2s ease;
+}
+
 /* Style rules for contact form */
 .desktop-form {
   display: none;
@@ -232,7 +236,7 @@ textarea {
 }
 
 .kowloon-link {
-  color: black;
+  color: #dcdcdc;
 }
 
 .soundbit {
